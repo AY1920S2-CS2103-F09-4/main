@@ -133,13 +133,13 @@ The following class plays an important role at the architecture level:</p>
 <p>For the <code>Logic</code> and <code>Model</code> components, each view has their own <code>{Component Name} Manager</code> classes.</p>
 </div>
 <div class="paragraph">
-<p>e.g. <code>HomeLogicManager</code> etc. to facilitate different operations and commands in different views in the App.</p>
+<p>e.g. <code>JournalLogicManager</code> etc. to facilitate different operations and commands in different views in the App.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="images/LogicDiagram.png" alt="LogicDiagram">
+<img src="images/JournalLogicDiagram.png" alt="JournalLogicDiagram">
 </div>
-<div class="title">Figure 2. Class Diagram of the Home Logic Component</div>
+<div class="title">Figure 2. Class Diagram of the Journal Logic Component</div>
 </div>
 <h4 id="how-the-architecture-components-interact-with-each-other" class="discrete">How the architecture components interact with each other</h4>
 <div class="paragraph">
@@ -197,9 +197,9 @@ The following class plays an important role at the architecture level:</p>
 </div>
 <div class="sect2">
 <h3 id="Design-Logic"><a class="link" href="#Design-Logic">2.3. Logic component</a></h3>
-<div id="fig-LogicClassDiagram" class="imageblock">
+<div id="fig-LogicClassDiagram1" class="imageblock">
 <div class="content">
-<img src="images/LogicDiagram.png" alt="LogicDiagram">
+<img src="images/JournalLogicDiagram.png" alt="JournalLogicDiagram">
 </div>
 <div class="title">Figure 6. Structure of the Logic Component</div>
 </div>
@@ -210,10 +210,10 @@ The following class plays an important role at the architecture level:</p>
 <div class="olist arabic">
 <ol class="arabic">
 <li>
-<p><code>Logic</code> uses the <code>XYZInputParser</code> class of the current feature to parse the user command.</p>
+<p><code>Logic</code> uses the <code>JournalInputParser</code> class of the current feature to parse the user command.</p>
 </li>
 <li>
-<p>This results in a <code>Command</code> object which is executed by the <code>XYZLogicManager</code> of the current feature.</p>
+<p>This results in a <code>Command</code> object which is executed by the <code>JournalLogicManager</code> of the current feature.</p>
 </li>
 <li>
 <p>The command execution can affect the <code>Model</code> of the current feature (e.g. adding a trip).</p>
@@ -1585,4 +1585,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2020-03-26 04:23:02 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2020-03-26 04:27:13 UTC</div></div></div></body></html>
