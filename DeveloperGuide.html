@@ -219,9 +219,9 @@ the command <code>back</code> when in a <code>TRIP</code> view. View switching i
 </div>
 <div id="view-switch-sequence" class="imageblock" style="text-align: center">
 <div class="content">
-<img src="images/ArchitectureSequenceDiagram.png" alt="ArchitectureSequenceDiagram">
+<img src="images/home-command-sequence.png" alt="home command sequence">
 </div>
-<div class="title">Figure 3. Component interactions for <code>back</code> command in the <code>TRIP</code> view.</div>
+<div class="title">Figure 3. Component interactions for <code>home</code> command in the <code>JOURNAL</code> page.</div>
 </div>
 <div class="paragraph">
 <p>The <em>Sequence Diagram</em> below illustrates how the components interact with each other for the scenario where the user
@@ -352,9 +352,15 @@ For example, <code>goto</code>, <code>back</code> and <code>home</code> navigati
 <h3 id="Design-Model"><a class="link" href="#Design-Model">3.4. Model component</a></h3>
 <div class="imageblock" style="text-align: center">
 <div class="content">
+<img src="/images/HomeClassDiagram.png" alt="HomeClassDiagram">
+</div>
+<div class="title">Figure 8. Class Diagram for the Model component on the <code>HOME</code> page</div>
+</div>
+<div class="imageblock" style="text-align: center">
+<div class="content">
 <img src="images/JournalModelDiagram.png" alt="JournalModelDiagram">
 </div>
-<div class="title">Figure 8. Structure of the Model Component in Journal</div>
+<div class="title">Figure 9. Structure of the Model Component in Journal</div>
 </div>
 <div class="paragraph">
 <p><strong>API</strong> : <a href="https://github.com/AY1920S2-CS2103T-F09-4/main/src/main/java/seedu/location/model/Model.java"><code>Model.java</code></a></p>
@@ -382,7 +388,7 @@ For example, <code>goto</code>, <code>back</code> and <code>home</code> navigati
 <div class="content">
 <img src="images/ItineraryModelDiagram.png" alt="ItineraryModelDiagram">
 </div>
-<div class="title">Figure 9. Structure of the Model Component in Itinerary</div>
+<div class="title">Figure 10. Structure of the Model Component in Itinerary</div>
 </div>
 <div class="paragraph">
 <p>The <code>Model</code> for <code>ITINERARY</code>,
@@ -411,7 +417,7 @@ For example, <code>goto</code>, <code>back</code> and <code>home</code> navigati
 <div class="content">
 <img src="images/StorageClassDiagram.png" alt="StorageClassDiagram">
 </div>
-<div class="title">Figure 10. Structure of the Storage Component</div>
+<div class="title">Figure 11. Structure of the Storage Component</div>
 </div>
 <div class="paragraph">
 <p><strong>API</strong> : <a href="https://github.com/AY1920S2-CS2103T-F09-4/main/blob/master/src/main/java/seedu/volant/commons/storage/Storage.java"><code>Storage.java</code></a></p>
@@ -510,9 +516,9 @@ appropriate functions to facilitate view switching.</p>
 </div>
 <div class="imageblock">
 <div class="content">
-<img src="/images/back-activity-diagram.png" alt="back activity diagram">
+<img src="images/back-activity-diagram.png" alt="back activity diagram">
 </div>
-<div class="title">Figure 11. Activity diagram for view switching process in <code>MainWindow</code> for <code>back</code> command</div>
+<div class="title">Figure 12. Activity diagram for view switching process in <code>MainWindow</code> for <code>back</code> command</div>
 </div>
 </div>
 <div class="sect3">
@@ -618,7 +624,7 @@ displayed as the user is already on the HOME page.</p>
 <div class="content">
 <img src="images/AddTripActivityDiagram.png" alt="AddTripActivityDiagram">
 </div>
-<div class="title">Figure 12. Activity Diagram for <code>add</code> Command</div>
+<div class="title">Figure 13. Activity Diagram for <code>add</code> Command</div>
 </div>
 </div>
 <div class="sect3">
@@ -710,7 +716,7 @@ The sort feature allows user to sort the entries in the <code>JOURNAL</code> of 
 <div class="content">
 <img src="images/SortActivityDiagram.png" alt="SortActivityDiagram" width="]">
 </div>
-<div class="title">Figure 13. Activity Diagram for <code>sort</code> Command</div>
+<div class="title">Figure 14. Activity Diagram for <code>sort</code> Command</div>
 </div>
 </div>
 </div>
@@ -768,7 +774,7 @@ The sort feature allows user to sort the entries in the <code>JOURNAL</code> of 
 <div class="content">
 <img src="images/deleteTripActivityDiagram.png" alt="deleteTripActivityDiagram" width="]">
 </div>
-<div class="title">Figure 14. Activity Diagram for <code>delete</code> Command</div>
+<div class="title">Figure 15. Activity Diagram for <code>delete</code> Command</div>
 </div>
 </div>
 <div class="sect3">
@@ -838,7 +844,7 @@ The sort feature allows user to sort the entries in the <code>JOURNAL</code> of 
 <div class="content">
 <img src="images/AddActivity.png" alt="AddActivity" width="]">
 </div>
-<div class="title">Figure 15. Activity Diagram for <code>add</code> Command</div>
+<div class="title">Figure 16. Activity Diagram for <code>add</code> Command</div>
 </div>
 </div>
 <div class="sect3">
@@ -905,7 +911,7 @@ The sort feature allows user to sort the entries in the <code>JOURNAL</code> of 
 <div class="content">
 <img src="images/FindItinerary.png" alt="FindItinerary" width="]">
 </div>
-<div class="title">Figure 16. Activity Diagram for <code>find</code> Command</div>
+<div class="title">Figure 17. Activity Diagram for <code>find</code> Command</div>
 </div>
 </div>
 <div class="sect3">
@@ -987,7 +993,7 @@ The sort feature allows user to sort the entries in the <code>JOURNAL</code> of 
 <div class="content">
 <img src="images/rfActivityDiagram.png" alt="rfActivityDiagram" width="]">
 </div>
-<div class="title">Figure 17. Activity Diagram for <code>rf</code> Command</div>
+<div class="title">Figure 18. Activity Diagram for <code>rf</code> Command</div>
 </div>
 </div>
 <div class="sect3">
@@ -1011,7 +1017,7 @@ The sort feature allows user to sort the entries in the <code>JOURNAL</code> of 
 <div class="content">
 <img src="images/user-guide/data-storage.png" alt="data storage">
 </div>
-<div class="title">Figure 18. Data Storage in Volant</div>
+<div class="title">Figure 19. Data Storage in Volant</div>
 </div>
 <div class="paragraph">
 <p>The data files are organised in a way that trip details are stored in <code>volant.json</code>, while journal and itinerary details
@@ -1111,7 +1117,7 @@ time, location, feeling and weather.</p>
 <div class="content">
 <img src="images/addTripStorageActivityDiagram.png" alt="addTripStorageActivityDiagram">
 </div>
-<div class="title">Figure 19. Activity diagram for adding a new trip</div>
+<div class="title">Figure 20. Activity diagram for adding a new trip</div>
 </div>
 <div class="paragraph">
 <p>The process is similar for the scenario where the user adds a new activity to the itinerary, and the <code>itinerary.json</code>
@@ -1121,7 +1127,7 @@ data file is updated. The following activity diagram summarises this process:</p
 <div class="content">
 <img src="images/addActivityStorageActivityDiagram.png" alt="addActivityStorageActivityDiagram">
 </div>
-<div class="title">Figure 20. Activity diagram for adding a new activity</div>
+<div class="title">Figure 21. Activity diagram for adding a new activity</div>
 </div>
 </div>
 <div class="sect3">
@@ -1163,7 +1169,7 @@ deleted.</p>
 <div class="content">
 <img src="images/editTripStorageActivityDiagram.png" alt="editTripStorageActivityDiagram">
 </div>
-<div class="title">Figure 21. Activity diagram for editing a trip</div>
+<div class="title">Figure 22. Activity diagram for editing a trip</div>
 </div>
 </div>
 <div class="sect3">
@@ -1204,7 +1210,7 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <div class="content">
 <img src="images/deleteStorageActivityDiagram.png" alt="deleteStorageActivityDiagram">
 </div>
-<div class="title">Figure 22. Activity diagram for deleting a journal entry/itinerary activity</div>
+<div class="title">Figure 23. Activity diagram for deleting a journal entry/itinerary activity</div>
 </div>
 </div>
 </div>
@@ -1480,7 +1486,7 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <p>User enters details of trip to be added</p>
 </li>
 <li>
-<p>V adds trip to trip list</p>
+<p>V adds new trip to trip list</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
@@ -1496,7 +1502,7 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <p>1a. V detects invalid characters in trip details</p>
 </li>
 <li>
-<p>1a1. V outputs error informing user of invalid characters</p>
+<p>1a1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
@@ -1519,10 +1525,36 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>1c. V is unable to detect a valid keyword</p>
+<p>1c. V detects that trip has a clashing date range with another trip on the trip list</p>
 </li>
 <li>
-<p>1c1. V outputs error informing user of invalid keyword</p>
+<p>1c1. V outputs error informing user of clashing date range between trip and another trip on the list</p>
+<div class="paragraph">
+<p>Use case ends</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>1d. V detects that trip has the same name as another trip on the trip list</p>
+</li>
+<li>
+<p>1d1. V outputs error informing user that the trip already exists on the trip list</p>
+<div class="paragraph">
+<p>Use case ends</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
+<p>1e. V is unable to detect a valid keyword</p>
+</li>
+<li>
+<p>1e1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
@@ -1564,6 +1596,19 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <div class="ulist none">
 <ul class="none">
 <li>
+<p>3c. V is unable to detect any specified fields to edit</p>
+</li>
+<li>
+<p>3c1. V outputs error informing user that a field to edit must be specified</p>
+<div class="paragraph">
+<p>Use case ends</p>
+</div>
+</li>
+</ul>
+</div>
+<div class="ulist none">
+<ul class="none">
+<li>
 <p>3a. V detects an invalid index i.e. index out of range or negative index</p>
 </li>
 <li>
@@ -1577,10 +1622,10 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>3b. V detects invalid characters for the details</p>
+<p>3b. V detects invalid characters for the fields</p>
 </li>
 <li>
-<p>3b1. V outputs error informing user of invalid characters</p>
+<p>3b1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
@@ -1590,17 +1635,17 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>3b. V is unable to detect a valid keyword</p>
+<p>3c. V is unable to detect a valid keyword</p>
 </li>
 <li>
-<p>3b1. V outputs error informing user of invalid keyword</p>
+<p>3c1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
 </li>
 </ul>
 </div>
-<h3 id="uc03-navigating-to-trip-folder" class="discrete">UC03 - Navigating to Trip Folder</h3>
+<h3 id="uc03-navigating-to-trip-page" class="discrete">UC03 - Navigating to Trip Page</h3>
 <div class="paragraph">
 <p><strong>Precondition:</strong> User has added a trip</p>
 </div>
@@ -1645,14 +1690,14 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <p>1b. V is unable to detect a valid keyword</p>
 </li>
 <li>
-<p>1b1. V outputs error informing user of invalid keyword</p>
+<p>1b1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
 </li>
 </ul>
 </div>
-<h3 id="uc04-accessing-pages-contact-list-itinerary-journal" class="discrete">UC04 - Accessing Pages (Contact List/ Itinerary / Journal)</h3>
+<h3 id="uc04-accessing-trip-feature-pages-itinerary-journal" class="discrete">UC04 - Accessing Trip Feature Pages (Itinerary / Journal)</h3>
 <div class="paragraph">
 <p><strong>Precondition:</strong> User is in the home page</p>
 </div>
@@ -1684,10 +1729,10 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <div class="ulist none">
 <ul class="none">
 <li>
-<p>2a. V detects incorrect command to navigate to the page</p>
+<p>2a. V detects invalid field to navigate to the page</p>
 </li>
 <li>
-<p>2a1. V outputs error informing user of incorrect command</p>
+<p>2a1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
@@ -1700,79 +1745,14 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <p>2b. V is unable to detect a valid keyword</p>
 </li>
 <li>
-<p>2b1. V outputs error informing user of invalid keyword</p>
+<p>2b1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
 </li>
 </ul>
 </div>
-<h3 id="uc05-adding-contact-to-contact-list-in-a-trip" class="discrete">UC05 - Adding Contact to Contact List in a Trip</h3>
-<div class="paragraph">
-<p><strong>Precondition: </strong>User is in the Contact List page of a trip</p>
-</div>
-<div class="paragraph">
-<p><strong>Guarantee: </strong>A new contact will be added to the Contact List</p>
-</div>
-<div class="paragraph">
-<p><strong>MSS</strong></p>
-</div>
-<div class="olist arabic">
-<ol class="arabic">
-<li>
-<p>User enters details of the contact</p>
-</li>
-<li>
-<p>V confirms the addition of the contact to the contact list and displays new contact in the contact list</p>
-<div class="paragraph">
-<p>Use case ends</p>
-</div>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Extensions</strong></p>
-</div>
-<div class="ulist none">
-<ul class="none">
-<li>
-<p>1a. V detects invalid characters in contact entry</p>
-</li>
-<li>
-<p>1a1. V outputs error informing user of invalid characters</p>
-<div class="paragraph">
-<p>Use case ends</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="ulist none">
-<ul class="none">
-<li>
-<p>1b. V detects missing fields in contact entry</p>
-</li>
-<li>
-<p>1b1. V outputs error informing user of missing contact entry</p>
-<div class="paragraph">
-<p>Use case ends</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="ulist none">
-<ul class="none">
-<li>
-<p>1c. V is unable to detect a valid keyword</p>
-</li>
-<li>
-<p>1c1. V outputs error informing user of invalid keyword</p>
-<div class="paragraph">
-<p>Use case ends</p>
-</div>
-</li>
-</ul>
-</div>
-<h3 id="uc06-adding-travel-entry-into-journal-in-a-trip" class="discrete">UC06 - Adding Travel Entry into Journal in a Trip</h3>
+<h3 id="uc05-adding-a-travel-entry-into-journal-of-a-trip" class="discrete">UC05 - Adding a travel Entry into Journal of a Trip</h3>
 <div class="paragraph">
 <p><strong>Precondition: </strong>User is already in the Journal page of Trip</p>
 </div>
@@ -1804,7 +1784,7 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <p>1a. V detects invalid characters in travel entry</p>
 </li>
 <li>
-<p>1a1. V outputs error informing user of invalid characters</p>
+<p>1a1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
@@ -1830,14 +1810,14 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <p>1c. V is unable to detect a valid keyword</p>
 </li>
 <li>
-<p>1c1. V outputs error informing user of invalid keyword</p>
+<p>1c1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
 </li>
 </ul>
 </div>
-<h3 id="uc07-adding-activities-into-itinerary" class="discrete">UC07 - Adding Activities into Itinerary</h3>
+<h3 id="uc06-adding-activities-into-itinerary" class="discrete">UC06 - Adding Activities into Itinerary</h3>
 <div class="paragraph">
 <p><strong>Precondition: </strong>User is already in the Itinerary page of the Trip
 <strong>Guarantee: </strong>A new activity will be added to the Itinerary</p>
@@ -1867,7 +1847,7 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <p>1a. V detects invalid characters into activity entry</p>
 </li>
 <li>
-<p>1a1. V outputs error informing user of invalid characters</p>
+<p>1a1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
@@ -1893,67 +1873,12 @@ summarises what happens when a user deletes a journal entry or itinerary activit
 <p>1c. V is unable to detect a valid keyword</p>
 </li>
 <li>
-<p>1c1. V outputs error informing user of invalid keyword</p>
+<p>1c1. V outputs error informing user of invalid command</p>
 <div class="paragraph">
 <p>Use case ends</p>
 </div>
 </li>
 </ul>
-</div>
-<h3 id="uc08-deleting-a-contact-in-the-contact-list-of-a-trip" class="discrete">UC08 - Deleting a Contact in the Contact List of a Trip</h3>
-<div class="paragraph">
-<p><strong>Precondition:</strong> User is in Contact List page of the Trip</p>
-</div>
-<div class="paragraph">
-<p><strong>Guarantee:</strong> The contact in the Contact List will be deleted</p>
-</div>
-<div class="paragraph">
-<p><strong>MSS</strong></p>
-</div>
-<div class="olist none">
-<ol class="none">
-<li>
-<p>User requests to delete a contact in the contact list at the specified index</p>
-</li>
-<li>
-<p>V deletes the contact at the specified index and updates the displayed list</p>
-</li>
-<li>
-<p>Use case ends</p>
-</li>
-</ol>
-</div>
-<div class="paragraph">
-<p><strong>Extensions</strong></p>
-</div>
-<div class="ulist none">
-<ul class="none">
-<li>
-<p>1a. V detects an invalid index i.e. index out of range or negative index</p>
-</li>
-<li>
-<p>1a1. V outputs error informing user of invalid index specified</p>
-<div class="paragraph">
-<p>Use case ends</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="ulist none">
-<ul class="none">
-<li>
-<p>1b. V is unable to detect a valid keyword</p>
-</li>
-<li>
-<p>1b1. V outputs error informing user of invalid keyword</p>
-<div class="paragraph">
-<p>Use case ends</p>
-</div>
-</li>
-</ul>
-</div>
-<div class="paragraph">
-<p><em>{More use cases will be added and current use cases may be edited in the future.}</em></p>
 </div>
 </div>
 </div>
@@ -2249,4 +2174,4 @@ Expected: Similar to previous.</p>
 </div>
 </div>
 </div>
-</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2020-04-13 10:37:57 UTC</div></div></div></body></html>
+</div></div><div id="footer"><div class="container"><div id="footer-text">Last updated 2020-04-13 12:01:13 UTC</div></div></div></body></html>
